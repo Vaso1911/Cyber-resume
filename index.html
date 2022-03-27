@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="image/png" sizes="16x16" rel="icon" href="./img/cyber-favicon.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/OverlayScrollbars.min.css"/>
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <script defer src="./js/OverlayScrollbars.min.js"></script>
+  <script defer src="./js/just-validate.min.js"></script>
+  <script defer src="./js/index.js"></script>
+  <title>Кибер резюме</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__block-top">
+        <div class="header__img">
+          <span class="header__span"></span>
+          <img class="img-wrapper" src="./img/Ava.jpg" alt="моя фотография в маске">
+        </div>
+        <h2 class="title-name cyber">
+          <span class="cyber-mobile" aria-hidden="true">Азаров Александр</span>
+          Азаров Александр
+          <span class="cyber-mobile" aria-hidden="true">Азаров Александр</span>
+        </h2>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://t.me/AzarWF" >
+              <img class="social-list__img" src="./img/telegram.png" alt="мой телеграм" >
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/id626691786" >
+              <img class="social-list__img" src="./img/vk.png" alt="мой вк" >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__block-bottom">
+        <h1 class="title-pro cyber"><span aria-hidden="true">Начинающий Frontend-разработчик.</span>
+          Начинающий Frontend-разработчик.
+          <span aria-hidden="true">Начинающий Frontend-разработчик.</span></h1>
+        <ul class="list-pro pixel">
+          <li class="list-pro__item-header">
+            Что я умею:
+          </li>
+          <li class="list-pro__item ">
+            --Освоил базу веб-верстки
+          </li>
+          <li class="list-pro__item list-pro__item--indent">
+            БЭМ, CSS, адаптивность, кроссбраузерность, доступность.
+          </li>
+          <li class="list-pro__item">
+            --Осваиваю JavaScript
+          </li>
+          <li class="list-pro__item list-pro__item--indent">
+            Функции, массивы, циклы, объекты.
+          </li>
+          <li class="list-pro__item">
+            --Приступил к изучению React
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="about">
+      <div class="hobby work-hobby">
+        <h2 class="work-hobby__title pixel cyber">
+          <span class="cyber-hobby" aria-hidden="true">Хобби</span>
+          Хобби
+          <span class="cyber-hobby" aria-hidden="true">Хобби</span>
+        </h2>
+        <ul class="work-hobby__list pixel">
+          <li class="work-hobby__item">
+            <p>--Море</p>
+            <img class="work-hobby__img" src="./img/sea.png" alt="иконка море">
+          </li>
+          <li class="work-hobby__item">
+            <p>--Природа</p>
+            <img class="work-hobby__img" src="./img/camping.png" alt="иконка палатка">
+          </li>
+          <li class="work-hobby__item">
+            <p>--Комп</p>
+            <img class="work-hobby__img" src="./img/comp.png" alt=" иконка человек зп компьютером">
+          </li>
+        </ul>
+      </div>
+      <div class="work work-hobby">
+        <h2 class="work-hobby__title pixel cyber">
+          <span class="cyber-work" aria-hidden="true">Опыт работы</span>
+          Опыт работы
+          <span class="cyber-work" aria-hidden="true">Опыт работы</span>
+        </h2>
+        <ul class="work-hobby__list pixel">
+          <li class="work-hobby__item">
+            <p>--Грузчиком </p>
+            <img class="work-hobby__img" src="./img/loader.png" alt="иконка грузчик">
+          </li>
+          <li class="work-hobby__item">
+            <p>--Рыбаком</p>
+            <img class="work-hobby__img" src="./img/fisherman.png" alt="иконка рыбак">
+          </li>
+          <li class="work-hobby__item">
+            <p>--Поваром</p>
+            <img class="work-hobby__img" src="./img/chef.png" alt="иконка повар">
+          </li>
+          <li class="work-hobby__item">
+            <p>--Таксистом</p>
+            <img class="work-hobby__img" src="./img/taxi.png" alt="иконка таксист">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <form action="#" class="form" method="POST" enctype="multipart/form-data" id="form">
+        <div class="input-wrapper">
+          <label class="pixel form__label" for="name"><span class="label-text cyber">
+              <span class="cyber-input-name" aria-hidden="true">Как вас зовут?</span>
+              Как вас зовут?
+              <span class="cyber-input-name" aria-hidden="true">Как вас зовут?</span>
+            </span>
+            <input class="input" id="name" name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
+          </label>
+          <label class="pixel form__label" for="email"><span class="label-text cyber">
+              <span class="cyber-input-email" aria-hidden="true">Укажите ваш e-mail</span>
+              Укажите ваш e-mail
+              <span class="cyber-input-email" aria-hidden="true">Укажите ваш e-mail</span>
+            </span>
+            <input class="input" id="email" name="Email" type="email" placeholder="E-mail*" data-validate-field="email">
+          </label>
+          <button class="pixel form__button">Отправить</button>
+        </div>
+
+        <div class="textarea-wrapper" >
+          <label class="pixel form__label" for="textarea"><span class="label-text cyber">
+              <span class="cyber-input-textarea" aria-hidden="true"   >Ваше сообщение</span>
+              Ваше сообщение
+              <span class="cyber-input-textarea" aria-hidden="true"   >Ваше сообщение</span>
+            </span>
+            <textarea class="textarea " name="Сообщение" id="textarea" cols="30" rows="10"
+              placeholder="Введите текст"></textarea>
+          </label>
+        </div>
+      </form>
+    </footer>
+  </div>
+  <video class="back" src="./back.mp4" preload="metadata" muted autoplay loop></video>
+</body>
+
+</html>
